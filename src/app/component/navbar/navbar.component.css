@@ -1,0 +1,58 @@
+/* Style for the entire menu */
+ul[nz-menu] {
+  font-size: 18px; /* Increase font size */
+  display: flex; /* Make the menu horizontal */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Style for each menu item */
+ul[nz-menu] li[nz-menu-item], 
+ul[nz-menu] li[nz-submenu-title] {
+  padding: 8px 12px; /* Increase padding */
+  display: flex; /* Align children horizontally */
+  align-items: center; /* Vertically center align the content */
+  margin-right: 10px; /* Add space between menu items */
+}
+
+/* Increase the size of the icons */
+span[nz-icon] {
+  font-size: 30px; /* Adjust the icon size */
+  vertical-align: middle;
+}
+
+/* Ensure submenu icon size matches */
+ul[nz-menu] li[nz-submenu] span[nz-icon] {
+  font-size: 30px; /* Ensure submenu icon size matches */
+}
+
+/* Ensure submenu title alignment */
+ul[nz-menu] li[nz-submenu] .ant-menu-submenu-title {
+  display: flex;
+  align-items: center; /* Align submenu title with the center */
+  padding: 0; /* Remove any default padding that may cause misalignment */
+}
+
+/* Ensure submenu padding matches other items */
+ul[nz-menu] li[nz-submenu] {
+  padding: 12px 20px; /* Match the padding of other menu items */
+}
+
+/* Style for the image in the menu item */
+ul[nz-menu] li[nz-menu-item] img {
+  margin-right: 10px; /* Add space between the image and text */
+  vertical-align: middle; /* Align the image with the text */
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after{
+  border-bottom: 2px solid #b600ff;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected{
+  color: #b600ff
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover {
+  color: #b600ff
+}
